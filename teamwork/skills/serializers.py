@@ -1,5 +1,4 @@
 from rest_framework import serializers
-
 from teamwork.skills.models import Skills, Specialties
 
 class SpecialSerializer(serializers.ModelSerializer):
@@ -13,7 +12,6 @@ class SkillsSerializer(serializers.ModelSerializer):
     class Meta:
         model = Skills 
         fields = ['id', 'name', 'special']
-
 
 class GetSkillsSerializer(serializers.ModelSerializer):
     class Meta:
